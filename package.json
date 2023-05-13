@@ -1,0 +1,29 @@
+{
+  "name": "ito-ulibrary-backend",
+  "version": "1.0.0",
+  "description": "Node JS API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingluisfransv/ito-ulibrary-backend.git"
+  },
+  "keywords": [],
+  "author": "Luis Francisco Gonzalez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingluisfransv/ito-ulibrary-backend.git"
+  },
+  "homepage": "https://github.com/ingluisfransv/ito-ulibrary-backend.git",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
