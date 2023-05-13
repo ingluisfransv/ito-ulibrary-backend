@@ -15,4 +15,15 @@ bookExpressRoute.route('/').get((req, res) => {
     })
 });
 
+// Create book
+bookExpressRoute.route('/create').post((req, res, next) => {
+    BookSchema.create(req.body, (error, data) => {
+        if (error) {
+            return next(error)
+        } else {
+            res.json(data)
+        }
+    })
+});
+
 module.exports = bookExpressRoute;

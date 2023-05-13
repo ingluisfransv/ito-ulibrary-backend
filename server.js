@@ -28,6 +28,8 @@ app.use(cors());
 
 const bookRoute = require('./routes/book.route');
 app.use('/endpoint/books', bookRoute);
+const userRoute = require('./routes/user.route');
+app.use('/endpoint/users', userRoute);
 
 // Create port
 const port = process.env.PORT || 8080;
