@@ -26,4 +26,23 @@ userExpressRoute.route('/create').post((req, res, next) => {
     })
 });
 
+// Validate user credentials
+userExpressRoute.route('/login').post((req, res, next) => {
+  const { email, password } = req.body;
+  UserSchema.findOne({ email, password }, (error, user) => {
+    if (error) {
+      return next(error);
+    } else {
+      if (user) {
+        res.json(user);
+      } else {
+        res.json(false);
+      }
+    }
+  });
+});
+
+
+
+
 module.exports = userExpressRoute;
